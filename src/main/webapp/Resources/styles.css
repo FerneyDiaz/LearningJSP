@@ -1,0 +1,41 @@
+/* 
+    Created on : 22/03/2020, 05:08:21 PM
+    Author     : ferney
+*/
+body, .default{
+    font-family: "Lucida Sans Unicode", "Lucida Grande";
+    line-height: 1.6em;
+    font-size: 12px;
+    color: #669; 
+}
+#tblColumns{
+    margin:45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#tblColumns caption{
+    font-size: 20px;
+}
+#tblColumns th{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 15px;
+    color: #039;
+}
+#tblColumns td{
+    padding: 10px 15px;
+    color: #669;
+    border-top: 1px solid #e8edff;    
+}
+.column{
+    background: #d0dafd;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;    
+}
+
+#tblColumns tr:hover td{
+    color: #339;
+    background: #eff2ff;
+}

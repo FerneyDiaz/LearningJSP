@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form one</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Resources/styles.css"/>
+        <script type="text/javascript" src="Resources/functions.js"></script>
+    </head>
+    <body>
+        <form name="form1" method="POST" action="/HolaMundoJSP/Form1" 
+              onsubmit="return validateForm(this)"> 
+            <input type="hidden"  name="hide" value="hideValue"/> 
+
+            <table width="200" id="tblColumns">
+                <caption>Form data register</caption>
+                <tr>
+                    <td class="column">
+                        <label for="txtUser">User *</label>
+                    </td> 
+                    <td>
+                        <input class="default" type="text" name="txtUser" id="txtUser" onfocus="this.select()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        <label for="txtPassword">Password *</label>                        
+                    </td> 
+                    <td>
+                        <input class="default" type="password" name="txtPassword" id="txtPassword" onfocus="this.select()"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="column">
+                        <label>Web technologies *</label>                        
+                    </td> 
+                    <td>
+                        Java <input type="checkbox" name="technology" value="java"/>
+                        &nbsp;&nbsp;
+                        .NET <input type="checkbox" name="technology" value=".net"/>
+                        &nbsp;&nbsp;
+                        PHP <input type="checkbox" name="technology" value="php"/>                                             
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        <label>Gender *</label> 
+                    </td>
+                    <td>
+                        Male <input type="radio" name="gender" value="male"/>
+                        &nbsp;&nbsp;
+                        Female <input type="radio" name="gender" value="female"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        <label for="slcOccupation">Occupation *</label>                   
+                    </td>
+                    <td>
+                        <select name="slcOccupation" id="slcOccupation" class="default">
+                            <option value="">Select</option>
+                            <option value="1">Teacher</option>
+                            <option value="2">Engineer</option>
+                            <option value="3">Retired</option>
+                            <option value="4">Another</option>                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        <label for="slcMusic">Genre music</label>                   
+                    </td>
+                    <td>
+                        <select name="slcMusic" multiple id="slcMusic" class="default">
+                            <option value="rap">Rap</option>
+                            <option value="rock">Rock</option>
+                            <option value="country">Country</option>
+                            <option value="another">Another</option>                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        <label for="txaComment">Comments</label>                   
+                    </td>
+                    <td>
+                        <textarea name="txaComment" cols="30" rows="10" class="default" onfocus="this.select()">                            
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">
+                        <button class="default" type="reset" name="btnClear" value="clear">Clear</button>
+                    </td>
+                    <td>
+                        <button class="default" type="submit" name="btnSend" value="send">Send</button>
+                    </td>
+                </tr>
+            </table>                       
+        </form>
+    </body>
+</html>
